@@ -1,0 +1,45 @@
+/* Navbar Styles */
+.navbar .navbar-brand {
+  height: 100%;
+  z-index: 100;
+  width: 82px;
+  min-width: 50px;
+  margin-left: 10px;
+  max-width: 50px;
+}
+
+.navbar .btn {
+  height: 100%;
+  max-width: 380px;
+  min-width: 160px;
+  display: inline-flex !important;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  align-items: center;
+  border: none;
+  margin-left: 30px;
+  font-size: smaller;
+  background-color: #1b514a !important;
+}
+
+.agenda.card {
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 1024px) {
+  .agenda.card {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .agenda.card {
+    width: 100% !important;
+  }
+}
+
+/* ... Other Navbar styles ... */
