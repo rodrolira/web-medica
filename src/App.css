@@ -11,6 +11,7 @@
   --light: #eff5ff;
   --dark: #1b2c51;
 }
+
 .fw-medium {
   font-weight: 500 !important;
 }
@@ -30,17 +31,7 @@
 .bg-blue {
   background-color: var(--primary) !important;
 }
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-  z-index: 99999;
-}
-#spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
+
 .icon-address {
   position: relative;
   left: 20px;

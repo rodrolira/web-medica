@@ -1,24 +1,35 @@
-import React from 'react';
-import { Spinner, Navbar } from 'flowbite-react';
-import Topbar from './components/Topbar';
+// App.jsx
+import React, { useState } from 'react';
+import './App.css';  // Asegúrate de importar tus estilos si los tienes
+import CustomSpinner from './components/atoms/Spinner/Spinner';
+import SocialButtons from './components/molecules/SocialButtons/SocialButtons';
 
-const App = () => (
-  <div>
-    <Spinner show={true} bgColor="bg-white" position="fixed translate-middle" size="3rem" />
-    <Topbar />
+const App = () => {
+  const [loadingComplete, setLoadingComplete] = useState(false);
 
-    {/* Main Content */}
-    <div className="my-8 mx-auto">
-      <div className="py-4">
-        {/* Your main content goes here */}
-      </div>
+  // Función que se llama cuando la carga ha finalizado
+  const handleLoadingComplete = () => {
+    setLoadingComplete(true);
+  };
+
+  return (
+    <div className="App">
+      {/* Renderiza el componente CustomSpinner solo si la carga no ha finalizado */}
+      {!loadingComplete && (
+        <div className={`show transition-opacity duration-1000 ${loadingComplete ? 'opacity-0 hidden' : 'opacity-100'}`}>
+          <CustomSpinner onLoadingComplete={handleLoadingComplete} />
+        </div>
+      )}
+
+      {loadingComplete && (
+        <div className={`transition-opacity duration-1000 ${loadingComplete ? 'opacity-100' : 'opacity-0 hidden'}`}>
+          {/* Otros elementos o componentes que puedas tener en la aplicación */}
+          <h1>Bienvenido a mi aplicación</h1>
+          <SocialButtons />
+        </div>
+      )}
     </div>
-
-    {/* Navbar */}
-    <Navbar className="bg-white sticky top-0 p-0 wow fadeIn" data-wow-delay="0.1s">
-      {/* ... (rest of the code for Navbar) */}
-    </Navbar>
-  </div>
-);
+  );
+};
 
 export default App;
