@@ -130,14 +130,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
-.box-rrss {
-  width: 370px;
-  align-items: center;
-  justify-content: space-evenly !important;
-  max-width: 370px;
-  min-width: 200px;
-  padding: 0 15px;
-}
+
 .horario.top-bar {
   text-align: center;
   width: 100%;
@@ -254,13 +247,7 @@ big.fa-phone-alt {
     justify-content: center;
     margin: 0 5px;
   }
-  .box-rrss {
-    width: 340px;
-    align-items: center;
-    justify-content: space-evenly !important;
-    max-width: 370px;
-    min-width: unset;
-  }
+
   .btn-sm-square {
     width: 24px;
     height: 24px;
@@ -295,4 +282,18 @@ big.fa-phone-alt {
     width: 100%;
     position: initial;
   }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
