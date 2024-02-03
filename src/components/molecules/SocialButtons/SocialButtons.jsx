@@ -3,9 +3,9 @@ import React from 'react';
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import SocialButton from '../../atoms/SocialButton/SocialButton';
 
-const SocialButtons = () => {
+const SocialButtons = (bgColor = 'transparent') => {
     return (
-        <div className="h-100 d-inline-flex box-rrss">
+        <div className="h-100 bg-transparent d-inline-flex box-rrss">
             <SocialButton icon={faFacebookF} href="/" />
             <SocialButton icon={faTwitter} href="/" />
             <SocialButton icon={faLinkedinIn} href="/" />
