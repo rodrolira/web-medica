@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './App.css';  // Asegúrate de importar tus estilos si los tienes
 import CustomSpinner from './components/atoms/Spinner/Spinner';
-import SocialButtons from './components/molecules/SocialButtons/SocialButtons';
+import TopBar from './components/organisms/TopBar/TopBar';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -24,8 +24,7 @@ const App = () => {
       {loadingComplete && (
         <div className={`transition-opacity duration-1000 ${loadingComplete ? 'opacity-100' : 'opacity-0 hidden'}`}>
           {/* Otros elementos o componentes que puedas tener en la aplicación */}
-          <h1>Bienvenido a mi aplicación</h1>
-          <SocialButtons />
+          <TopBar/>
         </div>
       )}
     </div>
