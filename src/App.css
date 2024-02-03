@@ -28,7 +28,7 @@
   bottom: 45px;
   z-index: 99;
 }
-.bg-blue {
+.bg-primary {
   background-color: var(--primary) !important;
 }
 
@@ -90,15 +90,8 @@
 .btn-back:hover {
   background-color: #1b514a !important;
 }
-.container-topbar {
-  height: 5vh;
-  max-height: 40px;
-  min-height: 37px;
-  font-size: 13px;
-}
-.box-address.btn-address:hover {
-  background-color: #1b514a;
-}
+
+
 .top-bar {
   display: inline-flex;
   color: #fff;
@@ -122,20 +115,7 @@
   padding-left: 0 !important;
   align-items: center;
 }
-.box-address {
-  text-align: center;
-  border-right: solid 1px #f8f8ff;
-  width: 40%;
-  padding-left: 10px;
-  height: 100%;
-}
-.address {
-  padding: 1px;
-  padding-right: 2px;
-  height: 100% !important;
-  align-items: center;
-  font-size: 0.7rem;
-}
+
 .top-horario {
   width: 100%;
 }
@@ -152,14 +132,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
-.box-rrss {
-  width: 370px;
-  align-items: center;
-  justify-content: space-evenly !important;
-  max-width: 370px;
-  min-width: 200px;
-  padding: 0 15px;
-}
+
 .horario.top-bar {
   text-align: center;
   width: 100%;
@@ -226,39 +199,6 @@ big.fa-phone-alt {
     width: 0 !important;
     height: 0 !important;
   }
-  .box-address {
-    text-align: center;
-    border-right: none;
-    width: 100%;
-    height: 100%;
-    padding: 0 !important;
-    margin: 0 5px;
-  }
-  .border-box-1 {
-    height: 100%;
-    width: 30%;
-    align-items: CENTER !important;
-  }
-  .address {
-    padding: 1px;
-    padding-right: 2px;
-  }
-  .border-wsp {
-    min-width: unset;
-    height: 100% !important;
-    align-items: center;
-    width: 100% !important;
-    font-size: 0.7rem;
-  }
-  .btn-address {
-    width: -webkit-fill-available;
-    height: 100%;
-  }
-  .icon-address {
-    width: 15%;
-    position: initial;
-    margin-right: 5px;
-  }
   .col-lg-5 {
     display: flex;
     flex-direction: row;
@@ -275,13 +215,6 @@ big.fa-phone-alt {
     display: flex;
     justify-content: center;
     margin: 0 5px;
-  }
-  .box-rrss {
-    width: 340px;
-    align-items: center;
-    justify-content: space-evenly !important;
-    max-width: 370px;
-    min-width: unset;
   }
   .btn-sm-square {
     width: 24px;
