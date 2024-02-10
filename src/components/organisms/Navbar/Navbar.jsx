@@ -6,7 +6,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
+        <nav className="navbar flex h-10 bg-white navbar-light sticky top-0 p-0 animate__animated animate__fadeIn" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
             <NavbarBrand />
             <NavbarCollapse />
         </nav>
