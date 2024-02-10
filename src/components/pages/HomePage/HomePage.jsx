@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CustomSpinner from '../../atoms/Spinner/Spinner';
+import TopBar from '../../organisms/TopBar/TopBar';
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -23,7 +24,8 @@ const HomePage = () => {
                   </div>
       ) : (
         // Contenido de la página principal cuando la carga ha finalizado
-        <div className='h-full w-full'>
+          <div>
+          <TopBar/>
           <h1>Bienvenido a mi página principal</h1>
           {/* Otro contenido... */}
         </div>
