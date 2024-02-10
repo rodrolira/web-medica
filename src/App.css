@@ -62,7 +62,7 @@
     font-size: 2rem;
   }
 }
-   .back-to-top {
+.back-to-top {
   position: fixed;
   display: none;
   right: 45px;
@@ -114,6 +114,9 @@
 }
 .btn-back:hover {
   background-color: #1b514a !important;
+}
+.rounded-pill {
+  border-radius: 50rem !important;
 }
 
 @media (max-width: 993px) {
