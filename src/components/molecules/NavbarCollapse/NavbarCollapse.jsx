@@ -1,6 +1,5 @@
 // NavbarCollapse.jsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Make sure to import Link if using React Router
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,10 +19,10 @@ const NavbarCollapse = () => {
             Iniciar Sesión &nbsp;
             <FontAwesomeIcon icon={faArrowRight} />
           </Link> */}
-                    <Link to="appointment.html" className="btn btn-primary rounded-0 d-none d-lg-block text-center">
+                    <a href="/" className="btn btn-primary rounded-0 d-none d-lg-block text-center">
                         ¡AGENDA TU HORA! &nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

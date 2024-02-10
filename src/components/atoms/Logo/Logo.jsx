@@ -1,10 +1,9 @@
 import React from "react";
-import "../../../../public/images/logo.png"
-
+import "./Logo.css";
 const Logo = () => {
     return (
-        <div className="logo">
-            <img loading="lazy" src="../../../images/logo.png" alt="logo centro nueva salud" />
+        <div>
+            <img className="logo" loading="lazy" src="../../../images/logo.png" alt="logo centro nueva salud" />
         </div>
     );
 };
