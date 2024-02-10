@@ -1,0 +1,201 @@
+.logo .carousel-item {
+  width: 100% !important;
+  float: left !important;
+  height: 100% !important;
+}
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.collapse.navbar-collapse {
+  height: 100%;
+  flex-basis: min-content;
+}
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center !important;
+}
+.nav-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.navbar .navbar-nav .nav-link {
+  margin: 0 10px;
+  padding: 25px 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+.navbar-toggler-icon {
+  transform: scaleX(1.5);
+  width: 47px;
+}
+.nav-item {
+  text-align: center !important;
+  width: 100%;
+  height: 100%;
+}
+.navbar-nav .dropdown-menu {
+  position: static;
+  border: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: inherit;
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+.navbar.sticky-top {
+  transition: 0.5s;
+  height: 9vh;
+  z-index: 5000;
+}
+.navbar .navbar-brand {
+  height: 100%;
+  z-index: 100;
+  width: 82px;
+  min-width: 50px;
+  margin-left: 10px;
+  max-width: 50px;
+}
+.navbar .btn {
+  height: 100%;
+  max-width: 380px;
+  min-width: 160px;
+  display: inline-flex !important;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  align-items: center;
+  border: none;
+  margin-left: 30px;
+  font-size: smaller;
+  background-color: #1b514a !important;
+}
+.agenda .btn:hover,
+.navbar .btn {
+  background-color: var(--primary) !important;
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+}
+.nav-item.nav-link {
+  height: 100%;
+  text-align: center !important;
+  display: inline-flex !important;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+a.nav-item.inicio.nav-link {
+  width: 30%;
+}
+a.nav-item.contact.nav-link {
+  width: 30%;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 993px) {
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 13px 0;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .nav-item:hover {
+    background: #1b514a;
+  }
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:hover {
+    color: #fff !important;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    background: #1b514a;
+  }
+  .navbar .navbar-brand {
+    margin-right: 50% !important;
+    position: absolute !important;
+    z-index: 1000 !important;
+    display: none !important;
+  }
+  .collapse.navbar-collapse {
+    height: 100%;
+    width: 100%;
+    flex-basis: content;
+    position: relative;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar-light .navbar-toggler {
+    position: relative !important;
+    z-index: 1000;
+    box-shadow: none !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+  .navbar .btn {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 1.3rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 8px !important;
+    min-width: 280px !important;
+    height: 100vh !important;
+    border: 1px solid #067272 !important;
+    border-radius: 4px !important;
+    max-width: none !important;
+  }
+  .navbar .btn:hover {
+    background: #067272;
+  }
+  .navbar-nav {
+    width: 100% !important;
+    background: var(--primary);
+    position: absolute;
+    height: 65vh !important;
+  }
+  .navbar-nav .nav-link:hover {
+    background: #1b514a;
+  }
+}
