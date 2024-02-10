@@ -3,16 +3,19 @@
 }
 .box-address {
   text-align: center;
-  justify-content: space-evenly;
-/* max-width: 370px; */
-min-width: 200px;
-
+  justify-content: flex-start;
+  /* max-width: 370px; */
+  min-width: 150px;
 }
 .address {
   padding: 1px;
   height: 100% !important;
   align-items: center;
   font-size: 0.7rem;
+}
+
+.btn-address {
+  margin-left: 15px;
 }
 
 @media (max-width: 993px) {
@@ -44,5 +47,16 @@ min-width: 200px;
     width: 15%;
     position: initial;
     margin-right: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .address {
+    display: none;
+  }
+  .icon-address {
+    text-align: right;
+    width: 100%;
+    position: initial;
   }
 }

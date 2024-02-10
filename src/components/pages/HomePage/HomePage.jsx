@@ -17,15 +17,15 @@ const HomePage = () => {
 
   return (
     <div className='text-center h-screen w-full'>
-          {loading ? (
-              <div className='text-center my-auto'>
-        <CustomSpinner size="xl" />
+      {loading ? (
+        <div className='text-center my-auto'>
+          <CustomSpinner size="xl" />
 
-                  </div>
+        </div>
       ) : (
         // Contenido de la página principal cuando la carga ha finalizado
-          <div>
-          <TopBar/>
+        <div>
+          <TopBar />
           <h1>Bienvenido a mi página principal</h1>
           {/* Otro contenido... */}
         </div>
