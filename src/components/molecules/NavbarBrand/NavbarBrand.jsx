@@ -5,7 +5,7 @@ import "./NavbarBrand.css"
 
 const NavbarBrand = () => {
     return (
-        <a href="/" className="navbar-brand d-flex align-items-center">
+        <a href="index.html" className="navbar-brand flex items-center">
             <Logo />
         </a>
     );
