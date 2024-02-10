@@ -5,26 +5,37 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const NavbarCollapse = () => {
     return (
-        <div className="btn-collapse">
-            <button type="button" name="menu" className="navbar-toggler me-4" style={{ backgroundColor: '#fbfcffe3' }} data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
-                <div className="navbar-nav">
-                    {/* Add other navigation links here */}
-                    {/* ... */}
-
-                    {/* SISTEMA DE LOGIN */}
-                    {/* <Link to="login.html" className="btn btn-primary rounded-0 d-none d-lg-block text-center">
-            Iniciar Sesión &nbsp;
-            <FontAwesomeIcon icon={faArrowRight} />
-          </Link> */}
-                    <a href="/" className="btn btn-primary rounded-0 d-none d-lg-block text-center">
+        <div className='flex w-full items-center h-full' id="navbarCollapse">
+            <ul className="navbar-nav flex items-center h-full w-full ml-auto">
+                <li className="nav-item">
+                    <a href="index.html" className="nav-link active">Inicio</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#about" className="nav-link">Sobre Nosotros</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#service" className="nav-link text-service">Especialidades Médicas</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown">Ver Más...</a>
+                    <div className="!hidden dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="patology.html" className="dropdown-item">Patologías</a>
+                        <a href="#team" className="dropdown-item">Nuestros Especialistas</a>
+                        <a href="appointment.html" className="dropdown-item">Agendar Cita</a>
+                        <a href="examens.html" className="dropdown-item">Examenes ORL</a>
+                        <a href="404.html" className="dropdown-item hidden">404 Page</a>
+                    </div>
+                </li>
+                <li className="nav-item">
+                    <a href="contact.html" className="nav-link">Contacto</a>
+                </li>
+                <li className="nav-item w-full">
+                    <a href="appointment.html" className="btn btn-primary w-full lg:block text-center">
                         ¡AGENDA TU HORA! &nbsp;
-                        <FontAwesomeIcon icon={faArrowRight} />
+                        <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     );
 };
