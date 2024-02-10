@@ -4,9 +4,9 @@ import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/
 import SocialButton from '../../atoms/SocialButton/SocialButton';
 import "./SocialButtons.css"
 
-const SocialButtons = (bgColor = 'transparent') => {
+const SocialButtons = () => {
     return (
-        <div className="h-full inline-flex box-rrss">
+        <div className="inline-flex items-center box-rrss">
             <SocialButton icon={faFacebookF} href="/" />
             <SocialButton icon={faTwitter} href="/" />
             <SocialButton icon={faLinkedinIn} href="/" />

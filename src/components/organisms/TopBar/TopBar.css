@@ -1,16 +1,10 @@
-.icon-address {
-  position: relative;
-  left: 20px;
-}
-.icon-clock {
-  margin-left: 10px !important;
-  position: relative;
-  left: 10px;
+.top-bar {
+  display: inline-flex;
+  color: #fff;
 }
 .border-box-1 {
   height: 100%;
   border-right: solid 1px #f8f8ff;
-  width: 59%;
   padding-right: 0;
   padding-left: 0 !important;
   align-items: center;
@@ -81,7 +75,7 @@
   display: inline-flex;
   color: #fff;
 }
-.h-tpbar {
+.h-topbar {
   height: 100% !important;
 }
 .col-lg-5 {
@@ -92,18 +86,9 @@
   width: 41%;
   position: relative;
 }
-.border-box-1 {
-  height: 100%;
-  border-right: solid 1px #f8f8ff;
-  width: 59%;
-  padding-right: 0;
-  padding-left: 0 !important;
-  align-items: center;
-}
+
 .box-address {
   text-align: center;
-  border-right: solid 1px #f8f8ff;
-  width: 40%;
   padding-left: 10px;
   height: 100%;
 }
