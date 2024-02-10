@@ -1,0 +1,43 @@
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.txt-header {
+  text-shadow: -2px 3px 8px rgba(0, 0, 0);
+  font-size: xxx-large;
+}
+
+.text-uppercase .txt-header {
+  font-size: large;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
+}
+
+.index.header.page-header {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .index.header.page-header {
+    display: initial;
+  }
+}
+
+.page-header {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: -2px 3px 8px rgba(0, 0, 0);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: var(--primary);
+  background-image: url(../../../../public/images/banner.webp);
+}
+
+@media (max-width: 993px) {
+  .counter-header {
+    display: none !important;
+  }
+}

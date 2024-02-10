@@ -1,0 +1,9 @@
+.header {
+  z-index: 500;
+}
+.img-header {
+  transition: 5s;
+  transform: translateX(-100%) !important;
+  animation: transicion-header 5s;
+  -webkit-animation: transicion-header 5s;
+}

@@ -4,6 +4,7 @@ import './App.css';  // Asegúrate de importar tus estilos si los tienes
 import CustomSpinner from './components/atoms/Spinner/Spinner';
 import MenuHeader from './components/organisms/MenuHeader/MenuHeader';
 import Header from './components/templates/Header/Header';
+import AboutUs from './components/organisms/AboutUs/AboutUs';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
           {/* Otros elementos o componentes que puedas tener en la aplicación */}
           <MenuHeader />
           <Header />
+          <AboutUs />
         </div>
       )}
     </div>
