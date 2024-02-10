@@ -1,0 +1,48 @@
+.top-horario {
+  width: 100%;
+  display: flex;
+}
+.txt-horario {
+  margin: 0 5px 0 5px !important;
+  width: 44%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  max-width: 230px;
+}
+.hora-semana {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.horario.top-bar {
+  text-align: center;
+  width: 100%;
+}
+.btn-domingo {
+  display: inline-flex;
+  justify-content: center;
+  width: 21vw;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #154547b0 !important;
+  border: none;
+  align-items: center;
+  min-width: 150px;
+  max-width: 280px;
+}
+@media (max-width: 993px) {
+  .top-horario {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+.icon-clock {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  left: 10px;
+}

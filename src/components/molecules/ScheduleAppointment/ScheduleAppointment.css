@@ -1,0 +1,31 @@
+.box-wsp {
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.link-wsp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.number {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  justify-content: center;
+  margin: 0 !important;
+  margin-right: 5px !important;
+}
+.icon-call {
+  margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .box-wsp {
+    min-width: 130px;
+  }
+}
