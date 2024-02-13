@@ -3,7 +3,6 @@ import Title from '../../molecules/Title/Title';
 import ServiceItem from '../../molecules/ServiceItem/ServiceItem';
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 import "./Specialties.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartbeat } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -17,7 +16,7 @@ const Specialties = () => (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {/* Add more ServiceItem components here for each specialty */}
                 <ServiceItem
-                    icon={<FontAwesomeIcon icon={faHeartbeat} />}
+                    icon={faHeartbeat}
                     title="Otorrinolaringología (Adulto e Infantil)"
                     description="Enfocados en el tratamiento de patologías asociadas al oído, nariz y cavidades paranasales, cavidad oral, faringe y laringe."
                     listItems={['Hipoacusia (disminución auditiva).', 'Rinitis.', 'Apnea del sueño.', 'Otitis.', 'Amigdalitis.', 'Fracturas nasales.', 'Mareos y vértigo.']}
