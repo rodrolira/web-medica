@@ -8,7 +8,7 @@ import ScheduleAppointment from '../../molecules/ScheduleAppointment/ScheduleApp
 
 const Topbar = () => {
   return (
-    <div className="bg-primary p-0 wow fadeIn container-fluid container-topbar flex w-full" data-wow-delay="0.1s">
+    <div className="bg-primary p-0 wow fadeIn container-fluid container-topbar flex w-full justify-between" data-wow-delay="0.1s">
       <div className=" top-bar border-box-1 !w-fit">
         <AddressInfo />
       </div>

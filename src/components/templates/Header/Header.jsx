@@ -13,7 +13,7 @@ const Header = () => {
 
 
     return (
-        <div className="container-fluid header bg-primary !p-0 mb-5 w-full">
+        <div className="container-fluid header bg-primary !p-0 mb-10 w-full">
             <div className="row g-0 items-center w-full [lg]:flex-row page-header !flex-nowrap text-center ">
                 {/* MENU 2 */}
                 <PageHeader />
