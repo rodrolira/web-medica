@@ -8,6 +8,7 @@ import AboutUs from './components/organisms/AboutUs/AboutUs';
 import Specialties from './components/organisms/Specialties/Specialties';
 import Features from './components/organisms/Features/Features';
 import TeamSection from './components/organisms/TeamSection/TeamSection';
+import Footer from './components/templates/Footer/Footer';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -35,6 +36,7 @@ const App = () => {
           <Specialties />
           <Features />
           <TeamSection />
+          <Footer />
         </div>
       )}
     </div>
