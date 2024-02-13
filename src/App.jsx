@@ -7,6 +7,7 @@ import Header from './components/templates/Header/Header';
 import AboutUs from './components/organisms/AboutUs/AboutUs';
 import Specialties from './components/organisms/Specialties/Specialties';
 import Features from './components/organisms/Features/Features';
+import TeamSection from './components/organisms/TeamSection/TeamSection';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -32,7 +33,8 @@ const App = () => {
           <Header />
           <AboutUs />
           <Specialties />
-          <Features/>
+          <Features />
+          <TeamSection />
         </div>
       )}
     </div>
