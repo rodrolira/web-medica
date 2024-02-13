@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import CustomSpinner from '../../atoms/Spinner/Spinner';
-import Topbar from '../../organisms/Topbar/Topbar';
+import React from 'react';
 import MenuHeader from '../../organisms/MenuHeader/MenuHeader';
 import Header from '../../templates/Header/Header';
 import AboutUs from '../../organisms/AboutUs/AboutUs';
