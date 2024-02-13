@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/web-medica/static/css/main.54cd3131.css",
+    "main.js": "/web-medica/static/js/main.2c24bf16.js",
+    "static/js/592.43bbec81.chunk.js": "/web-medica/static/js/592.43bbec81.chunk.js",
+    "static/media/banner.webp": "/web-medica/static/media/banner.49264a7d195179d59ecf.webp",
+    "index.html": "/web-medica/index.html",
+    "main.54cd3131.css.map": "/web-medica/static/css/main.54cd3131.css.map",
+    "main.2c24bf16.js.map": "/web-medica/static/js/main.2c24bf16.js.map",
+    "592.43bbec81.chunk.js.map": "/web-medica/static/js/592.43bbec81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54cd3131.css",
+    "static/js/main.2c24bf16.js"
+  ]
+}
