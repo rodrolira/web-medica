@@ -2,6 +2,8 @@ import React from 'react';
 import "./ServiceItem.css";
 
 import Icon from '../../atoms/Icon/Icon';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
 const ServiceItem = ({ icon, title, description, listItems, link }) => (
     <div className="col-lg-4 col-md-6 wow fadeInUp column-services p-5" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInUp' }}>
         <div className="service-item rounded h-100 p-12 box-especialidades">
@@ -15,7 +17,8 @@ const ServiceItem = ({ icon, title, description, listItems, link }) => (
                     <li key={index}>{item}</li>
                 ))}
             </ol>
-            <a className="btn btn-light dropdown-column" href={link}><Icon name="fa-plus" color="primary" size="3" />Ver Más</a>
+            <a className="btn btn-light dropdown-column" href={link}>
+                <Icon name={faPlus.iconName} color="primary" size="3" />Ver Más</a>
         </div>
     </div>
 );

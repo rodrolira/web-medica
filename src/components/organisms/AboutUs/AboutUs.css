@@ -1,0 +1,35 @@
+:root {
+  --primary: #00a4a3;
+  --light: #eff5ff;
+  --dark: #1b2c51;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1,
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
+.btn-primary {
+  background-color: var(--primary);
+}
+
+.iconCheck {
+  color: var(--primary);
+}
+.about-txt {
+  color: #8d8e92;
+}
+.about-column {
+  padding-right: calc(3rem / 2);
+  padding-left: calc(3rem / 2);
+  margin-top: 3rem;
+}
