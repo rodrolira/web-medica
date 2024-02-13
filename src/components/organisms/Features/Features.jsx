@@ -1,18 +1,18 @@
 import React from "react";
-
 import Title from '../../molecules/Title/Title';
 import FeatureItem from '../../molecules/FeatureItem/FeatureItem';
+import { faCommentMedical, faUserMd, faCheck, faHeadphones } from "@fortawesome/free-solid-svg-icons";
 
 const Features = () => (
-    <div className="container-fluid bg-primary overflow-hidden my-5 px-lg-0 text-center container-feature">
-        <div className="container feature px-lg-0 h-100">
+    <div className="container-fluid bg-primary !pe-0 overflow-hidden my-5 px-lg-0 text-center container-feature">
+        <div className="container feature !pe-0 px-lg-0 !me-0 h-100">
             <div className="row g-0 mx-lg-0 h-100">
                 <div className="col-lg-6 wow fadeIn h-100" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
                     <div className="lg:p-5 h-100">
-                        <p className="inline-block border rounded-pill text-light py-1 px-4">
+                        <p className="inline-block border rounded-pill text-white py-1 px-4">
                             Porque tu salud nos importa
                         </p>
-                        <h1 className="text-white mb-4"><Title text="¿Por qué elegirnos?" /></h1>
+                        <h1 className="!text-white mb-4"><Title text="¿Por qué elegirnos?" color="white" /></h1>
                         <p className="text-white mb-4 pb-2">
                             Porque cada uno de nuestro equipo de trabajo está 100%
                             comprometido por la salud de cada paciente.
@@ -29,25 +29,25 @@ const Features = () => (
                             desenvuelven.
                         </p>
 
-                        <div className="row g-4 col-feature">
+                        <div className="row g-4">
                             {/* Add more FeatureItem components here for each feature */}
                             <FeatureItem
-                                icon="fa-user-md"
+                                icon={faUserMd}
                                 title="Médicos"
                                 description="100% Comprometidos con el Paciente"
                             />
                             <FeatureItem
-                                icon="fa-check"
+                                icon={faCheck}
                                 title="Servicio"
                                 description="De Calidad"
                             />
                             <FeatureItem
-                                icon="fa-comment-medical"
+                                icon={faCommentMedical}
                                 title="Consultas"
                                 description="Con los mejores Profesionales de la Salud"
                             />
                             <FeatureItem
-                                icon="fa-headphones"
+                                icon={faHeadphones}
                                 title="9:00 AM - 19:30 AM"
                                 description="SOPORTE VÍA WHATSAPP"
                             />
@@ -55,9 +55,9 @@ const Features = () => (
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style={{ minHeight: '400px', height: '100%', visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' }}>
+                <div className="col-lg-6 !pe-0 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style={{ minHeight: '400px', height: '100%', visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' }}>
                     <div className="relative h-full">
-                        <img loading="lazy" className="img-fluid w-full h-full img-feature" src="img/nueva_salud_tv/agenda_tu_hora_medica_3.jpg" alt="Agenda Online" />
+                        <img loading="lazy" className="img-fluid w-full h-full img-feature" src="/images/agenda_tu_hora_medica_3.jpg" alt="Agenda Online" />
                     </div>
                 </div>
             </div>
