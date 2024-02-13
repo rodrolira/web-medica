@@ -1,9 +1,9 @@
 import React from 'react';
-
+import "./Title.css";
 const Title = ({ text }) => (
-    <p className="inline-block border rounded rounded-pill py-1 px-4">
+    <h1 className="text-4xl mb-6">
         {text}
-    </p>
+    </h1>
 );
 
 export default Title;
