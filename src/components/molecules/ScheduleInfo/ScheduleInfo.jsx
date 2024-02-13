@@ -6,7 +6,7 @@ import "./ScheduleInfo.css"
 const ScheduleInfo = () => {
     return (
         <div className="top-horario h-full inline-flex items-center w-full">
-            <big className="text-light xl:me-2 icon-clock" aria-hidden="true">
+            <big className="text-white xl:me-2 icon-clock" aria-hidden="true">
                 <FontAwesomeIcon icon={faClock} />
             </big>
             <small className="top-bar h-topbar horario">

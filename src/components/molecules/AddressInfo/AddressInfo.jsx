@@ -6,7 +6,7 @@ import "./AddressInfo.css"
 const AddressInfo = () => {
     return (
         <div className="inline-flex items-center box-address">
-            <big className="fa fa-map-marker-alt text-light icon-address" aria-hidden="true">
+            <big className="fa fa-map-marker-alt text-white icon-address" aria-hidden="true">
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
             </big>
             <a className="fs-6 btn-address" href="contact.html">

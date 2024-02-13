@@ -16,7 +16,7 @@ const PageHeader = () => {
             <li className="breadcrumb-item txt-header">
               <a href="/" className="text-white">Más</a>
             </li>
-            <li className="breadcrumb-item txt-header text-light" aria-current="page">
+            <li className="breadcrumb-item txt-header text-white" aria-current="page">
               Sobre Nosotros
             </li>
           </ol>

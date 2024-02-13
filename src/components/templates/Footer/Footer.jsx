@@ -5,9 +5,9 @@ import QuickLinks from '../../molecules/QuickLinks/QuickLinks';
 import NewsletterSignup from '../../organisms/NewsletterSignup/NewsletterSignup';
 
 const Footer = () => (
-    <div className="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn text-center" data-wow-delay="0.1s" style={{ visibility: 'hidden', animationDelay: '0.1s', animationName: 'none' }}>
+    <div className="container-fluid bg-teal-900 text-white footer mt-5 pt-5 wow fadeIn text-center" data-wow-delay="0.1s" style={{ animationDelay: '0.1s', animationName: 'none' }}>
         <div className="container py-5">
-            <div className="row g-5 align-items-baseline">
+            <div className="row g-5 items-baseline">
                 <ContactInfo />
                 <ServicesLinks />
                 <QuickLinks />

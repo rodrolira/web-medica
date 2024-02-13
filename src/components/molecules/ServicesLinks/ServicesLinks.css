@@ -1,0 +1,14 @@
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.fa-angle-right {
+  margin-right: 5px;
+}
