@@ -1,35 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import CustomSpinner from '../../atoms/Spinner/Spinner';
 import Topbar from '../../organisms/Topbar/Topbar';
+import MenuHeader from '../../organisms/MenuHeader/MenuHeader';
+import Header from '../../templates/Header/Header';
+import AboutUs from '../../organisms/AboutUs/AboutUs';
+import Specialties from '../../organisms/Specialties/Specialties';
+import Features from '../../organisms/Features/Features';
+import TeamSection from '../../organisms/TeamSection/TeamSection';
+import Footer from '../../templates/Footer/Footer';
 
 const HomePage = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simula un tiempo de carga, puedes ajustarlo según tus necesidades
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-
-    // Limpia el temporizador al desmontar el componente
-    return () => clearTimeout(loadingTimeout);
-  }, []);
 
   return (
-    <div className='text-center h-screen w-full'>
-      {loading ? (
-        <div className='text-center my-auto'>
-          <CustomSpinner size="xl" />
-
-        </div>
-      ) : (
-        // Contenido de la página principal cuando la carga ha finalizado
-        <div>
-          <Topbar />
-          <h1>Bienvenido a mi página principal</h1>
-          {/* Otro contenido... */}
-        </div>
-      )}
+    <div className='w-full'>
+      <MenuHeader />
+      <Header />
+      <AboutUs />
+      <Specialties />
+      <Features />
+      <TeamSection />
+      <Footer />
     </div>
   );
 };
