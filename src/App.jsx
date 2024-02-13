@@ -4,6 +4,7 @@ import './App.css';  // Asegúrate de importar tus estilos si los tienes
 import CustomSpinner from './components/atoms/Spinner/Spinner';
 
 import HomePage from './components/pages/HomePage/HomePage';
+import MenuHeader from './components/organisms/MenuHeader/MenuHeader';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
       {loadingComplete && (
         <div className={`transition-opacity duration-1000 ${loadingComplete ? 'opacity-100' : 'opacity-0 hidden'}`}>
           {/* Otros elementos o componentes que puedas tener en la aplicación */}
+          <MenuHeader />
           <HomePage />
         </div>
       )}

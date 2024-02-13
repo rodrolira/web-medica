@@ -18,31 +18,31 @@ const AboutUs = () => (
                 </div>
                 <div className="col-lg-6 wow fadeIn text-center about-column" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' }}>
                     <SectionTitle title="Quiénes somos" />
-                    <Title text="Somos un Centro Médico y de Diagnóstico" className="mb-8"/>
-                        <div className="about-txt">
-                            <p>
-                                Con énfasis en Otorrinolaringología, Traumatología, Medicina General
-                                y Pediatría.
-                            </p>
-                            <p className="mb-8">
-                                Entregamos una atención de calidad y equipamiento de punta, que le
-                                ofrece a sus pacientes resolver las necesidades de atención
-                                médica, imagenología y exámenes de laboratorio, con los mejores
-                                profesionales a un precio razonable en el mejor lugar y con
-                                instalaciones de primer nivel.
-                            </p>
-                            <p>
-                                <FontAwesomeIcon icon={faCheckCircle} className="me-4 far iconCheck fa-lg" />
-                                Atenciones de Calidad
-                            </p>
-                            <p>
-                                <FontAwesomeIcon icon={faCheckCircle} className="me-4 far iconCheck fa-lg" />
-                                Profesionales Cualificados
-                            </p>
-                            <div className='!mt-12'>
-                                <a className="btn btn-primary rounded-pill !py-3 !px-12  !inline !w-[30%]" href="about.html">Leer Más</a>
-                            </div>
+                    <Title text="Somos un Centro Médico y de Diagnóstico" className="mb-8" />
+                    <div className="about-txt">
+                        <p>
+                            Con énfasis en Otorrinolaringología, Traumatología, Medicina General
+                            y Pediatría.
+                        </p>
+                        <p className="mb-8">
+                            Entregamos una atención de calidad y equipamiento de punta, que le
+                            ofrece a sus pacientes resolver las necesidades de atención
+                            médica, imagenología y exámenes de laboratorio, con los mejores
+                            profesionales a un precio razonable en el mejor lugar y con
+                            instalaciones de primer nivel.
+                        </p>
+                        <p>
+                            <FontAwesomeIcon icon={faCheckCircle} className="me-4 far iconCheck fa-lg" />
+                            Atenciones de Calidad
+                        </p>
+                        <p>
+                            <FontAwesomeIcon icon={faCheckCircle} className="me-4 far iconCheck fa-lg" />
+                            Profesionales Cualificados
+                        </p>
+                        <div className='!mt-12'>
+                            <a className="btn bg-primary !text-white !btn-primary rounded-pill !py-3 !px-12  !inline !w-[30%]" href="/about-us">Leer Más</a>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>

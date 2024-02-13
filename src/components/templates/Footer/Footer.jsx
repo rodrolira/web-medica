@@ -3,6 +3,7 @@ import ContactInfo from '../../molecules/ContactInfo/ContactInfo';
 import ServicesLinks from '../../molecules/ServicesLinks/ServicesLinks';
 import QuickLinks from '../../molecules/QuickLinks/QuickLinks';
 import NewsletterSignup from '../../organisms/NewsletterSignup/NewsletterSignup';
+import Copyright from '../../atoms/Copyright/Copyright';
 
 const Footer = () => (
     <div className="container-fluid bg-teal-900 text-white footer mt-5 pt-5 wow fadeIn text-center" data-wow-delay="0.1s" style={{ animationDelay: '0.1s', animationName: 'none' }}>
@@ -14,7 +15,7 @@ const Footer = () => (
                 <NewsletterSignup />
             </div>
         </div>
-        {/* Additional copyright and attribution section */}
+    <Copyright/>
     </div>
 );
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import MenuHeader from '../../organisms/MenuHeader/MenuHeader';
 import Header from '../../templates/Header/Header';
 import AboutUs from '../../organisms/AboutUs/AboutUs';
 import Specialties from '../../organisms/Specialties/Specialties';
@@ -11,7 +10,6 @@ const HomePage = () => {
 
   return (
     <div className='w-full'>
-      <MenuHeader />
       <Header />
       <AboutUs />
       <Specialties />
