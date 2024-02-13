@@ -5,6 +5,8 @@ import CustomSpinner from './components/atoms/Spinner/Spinner';
 import MenuHeader from './components/organisms/MenuHeader/MenuHeader';
 import Header from './components/templates/Header/Header';
 import AboutUs from './components/organisms/AboutUs/AboutUs';
+import Specialties from './components/organisms/Specialties/Specialties';
+import Features from './components/organisms/Features/Features';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -29,6 +31,8 @@ const App = () => {
           <MenuHeader />
           <Header />
           <AboutUs />
+          <Specialties />
+          <Features/>
         </div>
       )}
     </div>

@@ -21,6 +21,30 @@
 .fw-black {
   font-weight: 900 !important;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1b2c51;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 576px) {
   .col-sm-4 {
     flex: 0 0 auto;
@@ -90,6 +114,10 @@
 .btn.btn-secondary {
   color: #fff;
 }
+
+.btn-primary {
+  background-color: var(--primary);
+}
 .btn-square {
   width: 38px;
   height: 38px;
@@ -146,15 +174,6 @@
   }
 }
 
-@media (max-width: 993px) {
-  .img-feature {
-    position: relative !important;
-    display: none;
-  }
-  .bg-primary.container-fluid.feature.h-50.overflow-hidden.px-lg-0 {
-    height: 70vh;
-  }
-}
 .btn-collapse {
   display: flex;
   flex-direction: column;
@@ -176,71 +195,21 @@
     display: none;
   }
 }
-.service-item {
-  transition: 0.5s;
-  background-color: #027cff3f !important;
-}
-.service-item:hover {
-  margin-top: -10px;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
-}
-.service-item .btn {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 40px;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.service-item:hover .btn {
-  width: 140px;
-}
-.container-feature {
-  margin-bottom: 0 !important;
-}
+
 @media (max-width: 993px) {
-  .container-feature {
-    height: 700px;
-    padding: 24px;
-  }
   .col-lg-6.wow.fadeIn.h-100 {
     padding: 45px;
   }
 }
-@media (max-width: 576px) {
-  .container-feature {
-    height: 140vh !important;
-    padding: 24px;
-  }
-  .col-feature {
-    width: 100% !important;
-  }
-}
+
 @media (min-width: 992px) {
-  .container.feature {
-    max-width: 100% !important;
-    padding: 0 24px;
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 50%;
   }
-  .feature-text {
-    padding-left: calc(((100% - 960px) / 2) + 0.75rem);
-  }
+
 }
-@media (min-width: 1200px) {
-  .feature-text {
-    padding-left: calc(((100% - 1140px) / 2) + 0.75rem);
-  }
-}
-@media (min-width: 1400px) {
-  .feature-text {
-    padding-left: calc(((100% - 1320px) / 2) + 0.75rem);
-  }
-}
-.ms-4.col-feature {
-  width: -webkit-fill-available;
-}
+
 p.text-white.mb-2.border.rounded-pill.m-services {
   width: 202px !important;
 }
@@ -495,5 +464,5 @@ div.d-flex.align-items-center.wsp:hover {
 }
 
 .row .col-lg-4.col-md-6 {
-  width: 33, 3% !important;
+  width: 33.33% !important;
 }
