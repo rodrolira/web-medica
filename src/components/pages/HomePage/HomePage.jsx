@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../templates/Header/Header';
 import AboutUs from '../../organisms/AboutUs/AboutUs';
 import Specialties from '../../organisms/Specialties/Specialties';
@@ -7,9 +7,15 @@ import TeamSection from '../../organisms/TeamSection/TeamSection';
 import Footer from '../../templates/Footer/Footer';
 
 const HomePage = () => {
+  useEffect(() => {
+    const aboutElement = document.getElementById('home');
+    if (!aboutElement) {
+      aboutElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   return (
-    <div className='w-full'>
+    <div className='w-full' id='home'>
       <Header />
       <AboutUs />
       <Specialties />

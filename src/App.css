@@ -401,20 +401,7 @@ div.d-flex.align-items-center.wsp:hover {
 .flex {
   display: flex;
 }
-.whatsapp {
-  position: relative;
-  display: inline-flex;
-  width: 100%;
-  height: auto;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 200px;
-  z-index: 100;
-  justify-content: space-evenly;
-  align-items: center;
-  text-decoration: none;
-}
+
 .whatsapp-icon {
   position: relative;
   right: -8px;

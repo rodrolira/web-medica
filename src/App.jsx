@@ -6,8 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage/HomePage';
 import MenuHeader from './components/organisms/MenuHeader/MenuHeader';
 import AboutUsPage from './components/pages/AboutUsPage/AboutUsPage';
+import ServicesPage from './components/pages/ServicesPage/ServicesPage';
+import ContactPage from './components/pages/ContactPage/ContactPage';
 
 const App = () => {
+
   const [loadingComplete, setLoadingComplete] = useState(false);
 
   // Función que se llama cuando la carga ha finalizado
@@ -35,6 +38,8 @@ const App = () => {
               {/*Configura las Rutas*/}
               <Route path="/" element={<HomePage />} />
               <Route path="about" element={<AboutUsPage />} />
+              <Route path='services' element={<ServicesPage />} />
+              <Route path="contact" element={<ContactPage />} />
             </Routes>
 
           </div>
