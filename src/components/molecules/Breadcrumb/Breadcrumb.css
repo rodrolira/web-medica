@@ -49,6 +49,11 @@
   color: white;
   content: var(--bs-breadcrumb-divider, '/');
 }
-.text-primary {
-  color: var(--primary) !important;
+
+.breadcrumb-link {
+  color: white;
+}
+
+.breadcrumb-link:hover {
+  color: var(--primary);
 }
