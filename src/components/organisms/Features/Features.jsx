@@ -4,8 +4,8 @@ import FeatureItem from '../../molecules/FeatureItem/FeatureItem';
 import { faCommentMedical, faUserMd, faCheck, faHeadphones } from "@fortawesome/free-solid-svg-icons";
 
 const Features = () => (
-    <div className="container-fluid bg-primary !pe-0 overflow-hidden my-5 px-lg-0 text-center container-feature">
-        <div className="container feature !pe-0 px-lg-0 !me-0 h-100">
+    <div id="feature" className="container-fluid bg-primary !pe-0 overflow-hidden mt-5 px-lg-0 text-center container-feature">
+        <div className="feature !pe-0 px-lg-0 !me-0 h-100">
             <div className="row g-0 mx-lg-0 h-100">
                 <div className="col-lg-6 wow fadeIn h-100" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
                     <div className="lg:p-5 h-100">

@@ -7,7 +7,7 @@ import { faHeartbeat, faBaby, faBrain, faCrutch, faHeadSideVirus, faStethoscope 
 
 
 const Specialties = () => (
-    <div className="container-xxl py-5" id="service" name="service">
+    <div className="container-xxl py-12" id="service" name="service">
         <div className=" container-services">
             <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px', visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInUp' }}>
                 <SectionTitle title="Servicios" />

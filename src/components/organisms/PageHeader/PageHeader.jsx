@@ -4,7 +4,7 @@ import './PageHeader.css';
 const PageHeader = () => {
   return (
     <div className="txt-header index header page-header bg-primary wow slideInDown animated" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'slideInDown' }}>
-      <div className="container py-5">
+      <div className="container py-12">
         <h1 className="display-3 txt-header text-white mb-3 animated slideInDown">
           Centro Médico y Diagnóstico Nueva Salud
         </h1>

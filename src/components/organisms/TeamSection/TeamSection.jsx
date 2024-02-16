@@ -55,7 +55,7 @@ const members = [
 ];
 
 const TeamSection = () => (
-    <div className="container-xxl py-5" id="team">
+    <div className="container-xxl py-12" id="team">
         <div className="container">
             <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px', animationDelay: '0.1s', animationName: 'none' }}>
                 <SectionTitle title="Médicos" />

@@ -120,12 +120,16 @@ a.nav-item.contact.nav-link {
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
+    position: absolute;
   }
   .navbar .nav-item:hover .dropdown-menu {
     top: 100%;
     visibility: visible;
     transition: 0.5s;
     opacity: 1;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
   }
 }
 

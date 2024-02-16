@@ -3,8 +3,6 @@ import React from 'react';
 import PageHeader from '../../organisms/PageHeader/PageHeader'
 import CountersGroup from '../../molecules/CountersGroup/CountersGroup';
 import CarouselGroup from '../../molecules/Carousel/Carousel';
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import './Header.css';
 
 

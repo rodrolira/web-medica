@@ -6,8 +6,8 @@ import NewsletterSignup from '../../organisms/NewsletterSignup/NewsletterSignup'
 import Copyright from '../../atoms/Copyright/Copyright';
 
 const Footer = () => (
-    <div className="container-fluid bg-teal-900 text-white footer mt-5 pt-5 wow fadeIn text-center" data-wow-delay="0.1s" style={{ animationDelay: '0.1s', animationName: 'none' }}>
-        <div className="container py-5">
+    <div className="container-fluid bg-teal-900 text-white footer  pt-5 wow fadeIn text-center" data-wow-delay="0.1s" style={{ animationDelay: '0.1s', animationName: 'none' }}>
+        <div className="container py-12">
             <div className="row g-5 items-baseline">
                 <ContactInfo />
                 <ServicesLinks />
@@ -15,7 +15,7 @@ const Footer = () => (
                 <NewsletterSignup />
             </div>
         </div>
-    <Copyright/>
+        <Copyright />
     </div>
 );
 

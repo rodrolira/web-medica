@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import './App.css';  // Asegúrate de importar tus estilos si los tienes
 import CustomSpinner from './components/atoms/Spinner/Spinner';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage/HomePage';
 import MenuHeader from './components/organisms/MenuHeader/MenuHeader';
+import AboutUsPage from './components/pages/AboutUsPage/AboutUsPage';
 
 const App = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -15,22 +16,35 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      {/* Renderiza el componente CustomSpinner solo si la carga no ha finalizado */}
-      {!loadingComplete && (
-        <div className={`show transition-opacity duration-1000 ${loadingComplete ? 'opacity-0 hidden' : 'opacity-100'}`}>
-          <CustomSpinner onLoadingComplete={handleLoadingComplete} />
-        </div>
-      )}
+    <Router>
 
-      {loadingComplete && (
-        <div className={`transition-opacity duration-1000 ${loadingComplete ? 'opacity-100' : 'opacity-0 hidden'}`}>
-          {/* Otros elementos o componentes que puedas tener en la aplicación */}
-          <MenuHeader />
-          <HomePage />
-        </div>
-      )}
-    </div>
+      <div className="App">
+
+        {/* Renderiza el componente CustomSpinner solo si la carga no ha finalizado */}
+        {!loadingComplete && (
+          <div className={`show transition-opacity duration-1000 ${loadingComplete ? 'opacity-0 hidden' : 'opacity-100'}`}>
+            <CustomSpinner onLoadingComplete={handleLoadingComplete} />
+          </div>
+        )}
+
+        {loadingComplete && (
+          <div className={`transition-opacity duration-1000 ${loadingComplete ? 'opacity-100' : 'opacity-0 hidden'}`}>
+            {/* Otros elementos o componentes que puedas tener en la aplicación */}
+            <MenuHeader />
+            <Routes >
+              {/*Configura las Rutas*/}
+              <Route path="/" element={<HomePage />} />
+              <Route path="about" element={<AboutUsPage />} />
+            </Routes>
+
+          </div>
+
+        )}
+
+
+      </div>
+    </Router>
+
   );
 };
 

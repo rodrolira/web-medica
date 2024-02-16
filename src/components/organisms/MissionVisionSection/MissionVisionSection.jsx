@@ -1,12 +1,11 @@
 import React from 'react';
+import Image from '../../atoms/Image/Image';
 
 const MissionVisionSection = () => (
-    <div className="row g-5">
-        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
-            {/* Image components go here */}
-        </div>
-        <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' }}>
-            {/* Content components go here */}
+    <div className="col-lg-6 wow fadeIn about-column" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
+        <div className="flex flex-col">
+            <Image src="images/about/about-1" alt="" className="rounded w-100 self-end" />
+            <Image src="images/about/about-2" alt="" className="img-fluid rounded w-50 bg-white pt-3 pe-3" style={{ marginTop: '-25%' }} />
         </div>
     </div>
 );

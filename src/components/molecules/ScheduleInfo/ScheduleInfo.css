@@ -13,6 +13,8 @@
 .hora-semana {
   display: inline-flex;
   flex-wrap: nowrap;
+  width: 100% !important;
+  justify-content: space-around;
 }
 .horario.top-bar {
   text-align: center;

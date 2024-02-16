@@ -51,6 +51,12 @@ p {
     width: 33.33333%;
   }
 }
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
@@ -81,10 +87,22 @@ p {
   .display-4 {
     font-size: 3.5rem;
   }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+
   .h2,
   h2 {
     font-size: 2rem;
   }
+  .display-3 {
+  font-size: 4rem;
+}
+
 }
 .back-to-top {
   position: fixed;
@@ -207,7 +225,6 @@ p {
     flex: 0 0 auto;
     width: 50%;
   }
-
 }
 
 p.text-white.mb-2.border.rounded-pill.m-services {

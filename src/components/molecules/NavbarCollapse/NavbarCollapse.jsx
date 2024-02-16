@@ -1,39 +1,52 @@
 // NavbarCollapse.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
+import './NavbarCollapse.css'
 
 const NavbarCollapse = () => {
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setDropdownOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownOpen(false);
+    };
     return (
         <div className='flex w-full items-center h-full' id="navbarCollapse">
             <ul className="navbar-nav flex items-center h-full w-full ml-auto">
                 <li className="nav-item">
-                    <a href="index.html" className="nav-link active">Inicio</a>
+                    <NavLink to='/' activeClassName="active" className="nav-link ">Inicio</NavLink>
                 </li>
                 <li className="nav-item">
-                    <a href="#about" className="nav-link">Sobre Nosotros</a>
+                    <NavLink to="about" activeClassName="active" className="nav-link">Sobre Nosotros</NavLink>
                 </li>
                 <li className="nav-item">
-                    <a href="#service" className="nav-link text-service">Especialidades Médicas</a>
+                    <NavLink to="services" activeClassName="active" className="nav-link text-service">Especialidades Médicas</NavLink>
                 </li>
-                <li className="nav-item dropdown">
-                    <a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown">Ver Más...</a>
-                    <div className="!hidden dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="patology.html" className="dropdown-item">Patologías</a>
-                        <a href="#team" className="dropdown-item">Nuestros Especialistas</a>
-                        <a href="appointment.html" className="dropdown-item">Agendar Cita</a>
-                        <a href="examens.html" className="dropdown-item">Examenes ORL</a>
-                        <a href="404.html" className="dropdown-item hidden">404 Page</a>
-                    </div>
+                <li className="nav-item dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <span className="nav-link dropdown-toggle">Ver Más...</span>
+                    {isDropdownOpen && (
+                        <div className="dropdown-menu rounded-b m-0">
+                            <NavLink to='/pathologies' activeClassName="active" className="dropdown-item">Patologías</NavLink>
+                            <NavLink to='/specialists' activeClassName="active" className="dropdown-item">Nuestros Especialistas</NavLink>
+                            <NavLink to='/appointment' activeClassName="active" className="dropdown-item">Agendar Cita</NavLink>
+                            <NavLink to='/orl-exams' activeClassName="active" className="dropdown-item">Examenes ORL</NavLink>
+                            <NavLink to='/404' activeClassName="active" className="dropdown-item hidden">404 Page</NavLink>
+                        </div>
+                    )}
                 </li>
                 <li className="nav-item">
-                    <a href="contact.html" className="nav-link">Contacto</a>
+                    <NavLink to='contact' activeClassName="active" className="nav-link">Contacto</NavLink>
                 </li>
                 <li className="nav-item w-full">
-                    <a href="appointment.html" className="btn btn-primary w-full lg:block text-center">
+                    <NavLink to='/appointment' activeClassName="active" className="btn btn-primary w-full lg:block text-center">
                         ¡AGENDA TU HORA! &nbsp;
                         <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </div>

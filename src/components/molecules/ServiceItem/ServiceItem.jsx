@@ -8,7 +8,7 @@ const ServiceItem = ({ icon, title, description, listItems, link }) => (
     <div className="col-lg-4 col-md-6 wow fadeInUp column-services p-5" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInUp' }}>
         <div className="service-item rounded h-100 p-12 box-especialidades">
             <div className="inline-flex items-center justify-center bg-white rounded-circle mb-4 mx-auto" style={{ width: '65px', height: '65px' }}>
-                <Icon icon={icon} color="primary" size="3xl" /> {/* Pasar el ícono como una propiedad */}
+                <Icon icon={icon} color="primary" size="2xl" /> {/* Pasar el ícono como una propiedad */}
             </div>
             <h4 className="mb-3 text-2xl h-16 text-center">{title}</h4>
             <p className="mb-4 service-txt">{description}</p>
