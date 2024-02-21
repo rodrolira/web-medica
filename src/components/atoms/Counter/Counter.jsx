@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Counter.css"
+import "./Counter.module.css"
 
 const Counter = ({ number, text }) => {
     return (

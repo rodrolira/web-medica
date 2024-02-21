@@ -5,7 +5,6 @@ const CarouselItem = ({ imgSrc, altText, headerText }) => {
     return (
         <div className="owl-carousel-item h-full position-relative">
             <picture className='h-full w-full' style={{ width: '101%' }}>
-                <source loading="lazy" srcSet={`${process.env.PUBLIC_URL}${imgSrc}.webp`} type="image/webp" />
                 <img loading="lazy" className="img-fluid" src={`${process.env.PUBLIC_URL}${imgSrc}.jpg`} alt={altText} />
             </picture>
             <div className="owl-carousel-text">

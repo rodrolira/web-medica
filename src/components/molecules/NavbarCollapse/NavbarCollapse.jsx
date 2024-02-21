@@ -1,7 +1,5 @@
 // NavbarCollapse.jsx
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import './NavbarCollapse.css'
 
@@ -17,7 +15,7 @@ const NavbarCollapse = () => {
     };
     return (
         <div className='flex w-full items-center h-full' id="navbarCollapse">
-            <ul className="navbar-nav flex items-center h-full w-full ml-auto">
+            <ul className="navbar-nav flex h-full items-center w-full ml-auto">
                 <li className="nav-item">
                     <NavLink to='/' activeClassName="active" className="nav-link ">Inicio</NavLink>
                 </li>
@@ -35,18 +33,12 @@ const NavbarCollapse = () => {
                             <NavLink to='/specialists' activeClassName="active" className="dropdown-item">Nuestros Especialistas</NavLink>
                             <NavLink to='/appointment' activeClassName="active" className="dropdown-item">Agendar Cita</NavLink>
                             <NavLink to='/orl-exams' activeClassName="active" className="dropdown-item">Examenes ORL</NavLink>
-                            <NavLink to='/404' activeClassName="active" className="dropdown-item hidden">404 Page</NavLink>
+                            <NavLink to='/404' activeClassName="active" className="dropdown-item">404 Page</NavLink>
                         </div>
                     )}
                 </li>
                 <li className="nav-item">
                     <NavLink to='contact' activeClassName="active" className="nav-link">Contacto</NavLink>
-                </li>
-                <li className="nav-item w-full">
-                    <NavLink to='/appointment' activeClassName="active" className="btn btn-primary w-full lg:block text-center">
-                        ¡AGENDA TU HORA! &nbsp;
-                        <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
-                    </NavLink>
                 </li>
             </ul>
         </div>

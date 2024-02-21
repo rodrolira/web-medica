@@ -57,7 +57,6 @@ p {
   line-height: 1.2;
 }
 
-
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 900;
@@ -100,9 +99,8 @@ p {
     font-size: 2rem;
   }
   .display-3 {
-  font-size: 4rem;
-}
-
+    font-size: 4rem;
+  }
 }
 .back-to-top {
   position: fixed;
@@ -163,6 +161,7 @@ p {
 }
 .rounded-pill {
   border-radius: 50rem !important;
+  border-color: #c1c1cd;
 }
 
 @media (max-width: 993px) {

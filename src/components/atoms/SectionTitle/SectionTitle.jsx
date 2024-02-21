@@ -1,9 +1,11 @@
 import React from "react";
-const SectionTitle = ({ title }) => {
+const SectionTitle = ({ title, additionalClasses }) => {
+    const classNames = `inline-block border rounded rounded-pill py-2 px-8 title ${additionalClasses}`;
+
     return (
-        <p className="inline-block border rounded rounded-pill py-2 px-8 title">
+        <div className={classNames}>
             {title}
-        </p>
+        </div>
     );
 };
 

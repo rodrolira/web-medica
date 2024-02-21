@@ -3,6 +3,10 @@
   float: left !important;
   height: 100% !important;
 }
+.navbar {
+  padding-inline: 5rem;
+  height: 10vh;
+}
 .navbar .dropdown-toggle::after {
   border: none;
   content: '\f107';
@@ -30,7 +34,7 @@
   margin: 0 10px;
   padding: 25px 0;
   color: #fff;
-  font-size: 15px;
+  font-size: smaller;
   text-transform: uppercase;
   outline: 0;
 }
@@ -48,7 +52,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .navbar-nav .dropdown-menu {
   position: static;

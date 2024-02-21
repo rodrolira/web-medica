@@ -6,7 +6,7 @@ import "./SocialButtons.css"
 
 const SocialButtons = () => {
     return (
-        <div className="inline-flex items-center box-rrss">
+        <div className="inline-flex h-full w-full items-center box-rrss">
             <SocialButton icon={faFacebookF} href="/" />
             <SocialButton icon={faTwitter} href="/" />
             <SocialButton icon={faLinkedinIn} href="/" />

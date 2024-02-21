@@ -3,50 +3,51 @@ import { Link } from 'react-router-dom';
 import Icon from '../../atoms/Icon/Icon';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen, faMapMarker, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import "./ContactSection.css"
+import "./ContactSection.module.css"
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
+import { Card } from 'flowbite-react';
 
 const ContactSection = () => {
     return (
         <div className="container-xxl py-12">
             <div className="container">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row g-4  gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center row g-4 ">
                     <div className="col-span-1 md:col-span-2 lg:col-span-1 col-lg-4">
-                        <div className="h-full bg-light rounded flex items-center p-12">
-                            <div className="flex-shrink-0 flex items-center justify-center rounded-[50%] bg-white w-14 h-14">
+                        <Card className=" rounded flex items-center max-w-sm">
+                            <div className="flex-shrink-0 flex items-center mx-auto justify-center  border-2 rounded-[50%] bg-white w-14 h-14">
                                 <Icon icon={faMapMarker} color={"primary"} aria-hidden="true" />
                             </div>
                             <div className="ms-4">
                                 <p className="mb-2">Dirección</p>
                                 <h5 className="mb-0">Pucará 020, Machalí</h5>
                             </div>
-                        </div>
+                        </Card>
                     </div>
                     <div className="col-span-1 md:col-span-2 lg:col-span-1 col-lg-4">
-                        <div className="h-full bg-light rounded flex items-center p-12">
-                            <div className="flex-shrink-0 flex items-center justify-center rounded-[50%] bg-white w-14 h-14">
+                        <Card className=" rounded flex items-center max-w-sm">
+                            <div className="flex-shrink-0 flex items-center justify-center mx-auto border-2 rounded-[50%] bg-white w-14 h-14">
                                 <Icon icon={faPhoneAlt} color={"primary"} aria-hidden="true" />
                             </div>
                             <div className="ms-4">
                                 <p className="mb-2">Llámanos Ahora!</p>
                                 <h5 className="mb-0">+56 2 25827477</h5>
                             </div>
-                        </div>
+                        </Card>
                     </div>
                     <div className="col-span-1 md:col-span-2 lg:col-span-1 col-lg-4">
-                        <div className="h-full bg-light rounded flex items-center p-12">
-                            <div className="flex-shrink-0 flex items-center justify-center rounded-[50%] bg-white w-14 h-14">
+                        <Card className=" rounded flex items-center max-w-sm">
+                            <div className="flex-shrink-0 flex items-center justify-center mx-auto border-2 rounded-[50%] bg-white w-14 h-14">
                                 <Icon icon={faEnvelopeOpen} color={"primary"} aria-hidden="true" />
                             </div>
                             <div className="ms-4">
                                 <p className="mb-2">Envíenos un correo</p>
                                 <h5 className="mb-0 fs-6">centronuevo2019@gmail.com</h5>
                             </div>
-                        </div>
+                        </Card>
                     </div>
                     <div className=" col-lg-6  wow fadeIn text-center" data-wow-delay="0.1s">
-                        <div className="bg-light rounded-lg p-12">
-                            <SectionTitle title="Contactanos" subtitle="Estamos para ayudarte!" />
+                        <Card className="rounded-lg ">
+                            <SectionTitle title="Contactanos" additionalClasses={"mx-auto font-semibold"} />
                             <h1 className="mb-4">¿Tienes alguna pregunta?</h1>
                             <div className="flex">
                                 <Link to="https://wa.me/5211234567890?text=Hola, tengo una duda!" className="whatsapp" target="_blank" rel="noreferrer">
@@ -56,7 +57,7 @@ const ContactSection = () => {
                                     </p>
                                 </Link>
                             </div>
-                        </div>
+                        </Card>
                     </div>
                     <div className="col-lg-6  wow fadeIn" data-wow-delay="0.5s">
                         <div className="h-full w-full min-h-[400px]">

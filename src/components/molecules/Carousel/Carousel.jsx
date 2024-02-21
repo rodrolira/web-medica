@@ -10,9 +10,9 @@ function CarouselGroup() {
     return (
         <div className="!p-0 pe-0 !m-0 w-[50%] h-[38rem] !rounded-none">
             <Carousel slideInterval={5000} theme={customTheme}>
-                <img className="h-full !rounded-none" src="images/main/main-caulier.webp" alt="..." />
-                <img className="h-full !rounded-none" src="images/main/main-vasquez.webp" alt="..." />
-                <img className="h-full !rounded-none" src="images/main/main-vargas.webp" alt="..." />
+                <img className="h-full !rounded-none" src="images/main/main1.jpg" alt="..." />
+                <img className="h-full !rounded-none" src="images/main/main2.jpg" alt="..." />
+                <img className="h-full !rounded-none" src="images/main/main3.jpg" alt="..." />
             </Carousel>
         </div>
     );
