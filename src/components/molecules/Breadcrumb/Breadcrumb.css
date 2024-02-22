@@ -11,6 +11,7 @@
   margin-bottom: 1rem;
   list-style: none;
 }
+
 .breadcrumb {
   padding-inline: 0;
   padding-block: 0;
@@ -30,20 +31,21 @@
   border-radius: var(--bs-breadcrumb-border-radius);
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumb-item+.breadcrumb-item {
   padding-left: 0.5rem;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   color: white;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   float: left;
   padding-right: 0.5rem;
   content: var(--bs-breadcrumb-divider, '/');
 }
-.breadcrumb-item + .breadcrumb-item::before {
+
+.breadcrumb-item+.breadcrumb-item::before {
   float: left;
   padding-right: var(--bs-breadcrumb-item-padding-x);
   color: white;
