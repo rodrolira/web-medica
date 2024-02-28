@@ -2,12 +2,13 @@
 import React from 'react';
 import Logo from '../../atoms/Logo/Logo';
 import "./NavbarBrand.css"
+import { Link } from 'react-router-dom';
 
 const NavbarBrand = () => {
     return (
-        <a href="index.html" className="navbar-brand flex items-center">
+        <Link to={"/"} className="navbar-brand flex">
             <Logo />
-        </a>
+        </Link>
     );
 };
 

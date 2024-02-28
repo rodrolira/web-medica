@@ -5,18 +5,9 @@
 }
 
 .navbar {
-  padding-inline: 5rem;
   height: 10vh;
 }
 
-.navbar .dropdown-toggle::after {
-  border: none;
-  content: '\f107';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  vertical-align: middle;
-  margin-left: 8px;
-}
 
 .collapse.navbar-collapse {
   height: 100%;
@@ -40,7 +31,8 @@
   margin: 0 10px;
   padding: 25px 0;
   color: #fff;
-  font-size: smaller;
+  font-size: medium;
+  font-weight: 500;
   text-transform: uppercase;
   outline: 0;
 }
@@ -83,10 +75,6 @@
 .navbar .navbar-brand {
   height: 100%;
   z-index: 100;
-  width: 82px;
-  min-width: 50px;
-  margin-left: 10px;
-  max-width: 50px;
 }
 
 .navbar .btn {
@@ -169,20 +157,16 @@ a.nav-item.contact.nav-link {
     background: #1b514a;
   }
 
-  .navbar .navbar-nav .nav-link.active,
-  .navbar .navbar-nav .nav-link:hover {
-    color: #fff !important;
-  }
+
 
   .navbar .navbar-nav .nav-link:hover {
     background: #1b514a;
   }
 
   .navbar .navbar-brand {
-    margin-right: 50% !important;
     position: absolute !important;
     z-index: 1000 !important;
-    display: none !important;
+
   }
 
   .collapse.navbar-collapse {
@@ -194,7 +178,6 @@ a.nav-item.contact.nav-link {
 
   .navbar {
     display: flex;
-    flex-wrap: wrap;
     align-content: stretch;
     flex-direction: row;
     align-items: center;
@@ -229,8 +212,7 @@ a.nav-item.contact.nav-link {
   }
 
   .navbar-nav {
-    width: 100% !important;
-    background: var(--primary);
+    width: 90% !important;
   }
 
   .navbar-nav .nav-link:hover {

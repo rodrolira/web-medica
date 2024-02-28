@@ -15,8 +15,8 @@ const ScheduleAppointment = () => {
                     rel="noreferrer noopener"
                 >
                     <FontAwesomeIcon icon={faPhoneAlt} className="text-white icon-call" aria-hidden="true" />
-                    <p className="number number-box fw-bolder">
-                        ¡AGENDA TU HORA AQUÍ!
+                    <p className="number uppercase number-box font-medium">
+                        Habla Con Nosotros
                         <span className="hiddenText"> &nbsp; &nbsp; +56939229685</span>
                     </p>
                 </a>

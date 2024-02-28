@@ -15,7 +15,7 @@ const Header = () => {
                 <PageHeader />
 
                 {/* RightSide */}
-                <div className="col-lg-6 w-[50%]  wow fadeIn menu-1 p-[3rem]" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
+                <div className="col-lg-6 w-[50%] lg:block md:hidden wow fadeIn menu-1 p-[3rem]" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
                     <h1 className="display-4 text-white mb-5">
                         <b>Centro Médico </b>
                     </h1>

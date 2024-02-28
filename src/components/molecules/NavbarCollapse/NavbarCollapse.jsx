@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavbarCollapse.css'
+import Icon from '../../atoms/Icon/Icon';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const NavbarCollapse = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -17,16 +19,19 @@ const NavbarCollapse = () => {
         <div className='flex w-full items-center h-full' id="navbarCollapse">
             <ul className="navbar-nav flex h-full items-center w-full ml-auto">
                 <li className="nav-item">
-                    <NavLink to='/' activeClassName="active" className="nav-link ">Inicio</NavLink>
+                    <NavLink to='/' activeClassName="active" className="nav-link md:!text-sm ">Inicio</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="about" activeClassName="active" className="nav-link">Sobre Nosotros</NavLink>
+                    <NavLink to="about" activeClassName="active" className="nav-link md:!text-sm">Sobre Nosotros</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="services" activeClassName="active" className="nav-link text-service">Especialidades Médicas</NavLink>
+                    <NavLink to="services" activeClassName="active" className="nav-link md:!text-sm text-service">Especialidades Médicas</NavLink>
                 </li>
                 <li className="nav-item dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <span className="nav-link dropdown-toggle">Ver Más...</span>
+                    <div className='flex items-center cursor-pointer'>
+                        <span className="nav-link md:!text-sm dropdown-toggle">Ver Más &nbsp;
+                            <Icon icon={faAngleDown} ></Icon></span>
+                    </div>
                     {isDropdownOpen && (
                         <div className="dropdown-menu rounded-b m-0">
                             <NavLink to='/pathologies' activeClassName="active" className="dropdown-item">Patologías</NavLink>
@@ -38,7 +43,7 @@ const NavbarCollapse = () => {
                     )}
                 </li>
                 <li className="nav-item">
-                    <NavLink to='contact' activeClassName="active" className="nav-link">Contacto</NavLink>
+                    <NavLink to='contact' activeClassName="active" className="nav-link md:!text-sm">Contacto</NavLink>
                 </li>
             </ul>
         </div>

@@ -18,9 +18,6 @@
     font-weight: bolder;
   }
 }
-.btn-primary {
-  background-color: var(--primary);
-}
 
 .iconCheck {
   color: var(--primary);

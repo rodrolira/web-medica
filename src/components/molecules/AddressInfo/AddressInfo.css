@@ -2,7 +2,11 @@
   padding: 1px;
   height: 100% !important;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 1rem;
+}
+
+.icon-address {
+  font-size: 1rem;
 }
 
 .btn-address {
