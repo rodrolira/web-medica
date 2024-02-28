@@ -1,12 +1,3 @@
-.box-address.btn-address:hover {
-  background-color: #1b514a;
-}
-.box-address {
-  text-align: center;
-  justify-content: flex-start;
-  /* max-width: 370px; */
-  min-width: 150px;
-}
 .address {
   padding: 1px;
   height: 100% !important;
@@ -18,7 +9,7 @@
   margin-left: 15px;
 }
 
-@media (max-width: 993px) {
+@media only screen and (max-width: 993px) {
   .box-address {
     text-align: center;
     border-right: none;
@@ -29,20 +20,14 @@
   }
 
   .address {
-    padding: 1px;
     padding-right: 2px;
   }
-  .border-wsp {
-    min-width: unset;
-    height: 100% !important;
-    align-items: center;
-    width: 100% !important;
-    font-size: 0.7rem;
-  }
+
   .btn-address {
     width: -webkit-fill-available;
     height: 100%;
   }
+
   .icon-address {
     width: 15%;
     position: initial;
@@ -54,6 +39,7 @@
   .address {
     display: none;
   }
+
   .icon-address {
     text-align: right;
     width: 100%;

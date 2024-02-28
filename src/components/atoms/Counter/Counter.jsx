@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Counter.module.css"
 
-const Counter = ({ number, text }) => {
+const Counter = ({ initialNumber, text }) => {
+    const [number, setNumber] = useState(0);
+
+    useEffect(() => {
+        console.log('Efecto ejecutándose...');
+        const interval = setInterval(() => {
+            setNumber((prevNumber) => {
+                const increment = Math.ceil((initialNumber - prevNumber) / 10); // Ajusta la velocidad aquí
+                const newNumber = prevNumber + increment;
+
+                if (newNumber >= initialNumber) {
+                    clearInterval(interval); // Detén el intervalo cuando alcanzas el valor inicial
+                    console.log('Limpiando intervalo...');
+                }
+
+                return newNumber;
+            });
+        }, 50); // Ajusta la velocidad aquí
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [initialNumber]);
+
+
     return (
         <div className="col-sm-4">
             <div className="border-l !h-full border-light py-4">
