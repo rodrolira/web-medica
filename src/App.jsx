@@ -23,7 +23,9 @@ const App = () => {
         )}
         {loadingComplete && (
           <div>
-            <MenuHeader />
+            <div className='h-[16vh]'>
+              <MenuHeader />
+            </div>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="about" element={<AboutUsPage />} />
