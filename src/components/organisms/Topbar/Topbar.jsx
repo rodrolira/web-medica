@@ -8,7 +8,7 @@ import AgendaButton from '../../atoms/AgendaButton/AgendaButton';
 
 const Topbar = () => {
   return (
-    <div className="bg-primary p-0 wow fadeIn container-fluid container-topbar flex w-full justify-between" data-wow-delay="0.1s">
+    <div className="bg-primary  wow fadeIn container-topbar flex  " data-wow-delay="0.1s">
       <div className=" top-bar border-box-1 !w-[50%]">
         <AddressInfo />
       </div>

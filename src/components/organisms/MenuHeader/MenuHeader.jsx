@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar';
 
 const MenuHeader = () => {
     return (
-        <div>
+        <div className = 'fixed w-full z-50'>
             <Topbar />
             <Navbar />
         </div>
