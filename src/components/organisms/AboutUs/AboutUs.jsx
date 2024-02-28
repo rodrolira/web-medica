@@ -45,7 +45,7 @@ const AboutUs = () => {
                                 Profesionales Cualificados
                             </p>
                             <div className='!mt-12'>
-                                <Link to="/about" className="btn bg-primary !text-white !btn-primary rounded-pill !py-3 !px-12  !inline !w-[30%]">Leer Más</Link>
+                                <Link to="/about" className="btn bg-primary !text-white !btn-primary rounded-pill !py-3 !px-12  !inline">Leer Más</Link>
                             </div>
                         </div>
                     </div>
